@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.wrapper {
+  min-height: 100%;
+	overflow: hidden;
+}
+
+.page {
+  position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.content {
+  &__courses {
+
+    margin: 158px 0;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 780px) {
+      flex-direction: column;
+      margin: 80px 0;
+    }
+  }
+
+}
+.courses {
+
+  &__column {
+    max-width:594px;
+    display: flex;
+    flex-direction: column;
+    //position: relative;
+  }
+
+  &__title {
+    position: relative;
+    font-family: Montserrat;
+    font-size: 34px;
+    line-height: 142.9%;
+    color: #000000;
+  }
+
+  &__fit {
+    max-width: 371px;
+    margin: 47px 0 0 0;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+  }
+
+  &__list {
+    li:first-child{
+      margin: 0 0 0 0;
+    }
+    li{
+      margin: 47px 0 0 0;
+      p{
+        margin: 14px 0 0 0;
+      }
+    }
+  }
+  &__logos{
+    .logo{
+      position: absolute;
+      display: flex;
+      z-index: -1;
+      width: 190px;
+      height: 42px;
+      border-radius: 5px;
+      
+      padding: 0 17px;
+      font-family: Montserrat;
+      align-items: center;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 27px;
+      color: #FFFFFF;
+    }
+    .logos__blue{
+      top: 100%;
+      left: 100%;
+      background: #0053B7;
+      transform-origin: bottom right;
+      transform: translate(-100%, -100%) rotate(20deg);
+      justify-content: flex-end;
+    }
+    .logos__black{
+      top: 0;
+      left: 0;
+      transform-origin: center center;
+      background: #1D1D1B;
+      transform: translate(-50%, -50%) rotate(-20deg);
+    }
+  }
+  @media (max-width: 780px) {
+    &__column {
+      align-items: center;
+    }
+    &__title {
+      text-align: center;
+      font-size: 26px;
+    }
+    &__fit {
+      text-align: center;
+    }
+
+    &__list {
+      li:first-child{
+        margin: 47px 0 0 0;
+      }
+    }
+    &__logos{
+      .logo{
+        width: 100px;
+        height: 42px;
+      }
+    }
+  }
+}
+.list {
+  &__question {
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  &__answer {
+    margin: 7px 0 0 0;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  }
+}
+
+//___________________________________________________________________________________
+//___________________________________________________________________________________
+
+.content {
+  
+  &__study {
+    background: #0B4C9B;
+    color:white;
+  }
+}
+.study {
+  position: relative;
+  &__row {
+    z-index: 3;
+    &:first-child{
+      margin: 105px 0 0 0;
+    }
+    &:last-child{
+      margin: 0 0 105px 0;
+    }
+
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__line{
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 107px 0;
+  }
+  &__question {
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 24px 0;
+  }
+
+  &__answer {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 26px;
+    &.swidth{
+      max-width: 250px;
+    }
+    &.bwidth{
+      max-width: 450px;
+    }
+  }
+
+  &__how {
+    font-family: Montserrat;
+    font-size: 34px;
+    line-height: 41px;
+    margin: 0 0 56px 0;
+  }
+  
+  &__advantages {
+  }
+
+  &__logos {
+  }
+
+  &__white {
+    left: 85%;
+    transform: translate(0, -50%);
+    @media (max-width:1450px) { 
+      transform: scale(0.8, 0.8) translate(-50%, -50%);
+    }
+    @media (max-width: 780px) {
+      transform: scale(0.5, 0.5) translate(-100.5%, -100%);
+    }
+  }
+
+  &__tape {
+    left: 100%;
+    top: 70%;
+    transform: translate(-100%, -50%);
+    @media (max-width:1450px) {
+      left: 100%;
+      transform: scale(0.8, 0.8) translate(-112.5%, -50%);
+    }
+    @media (max-width: 780px) {
+      transform: scale(0.5, 0.5) translate(-150.5%, -50%);
+    }
+  }
+
+  &__blue {
+    top: 100%;
+    transform: translate(0,-50%);
+    @media (max-width:1450px) {
+      transform: scale(0.8, 0.8) translate(0,-60%);
+    }
+    @media (max-width: 780px ) {
+      transform: scale(0.5, 0.5) translate(-40%,-100%);
+    }
+  }
+  @media (max-width: 780px) {
+
+    &__row {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    &__column {
+    }
+    &__question {
+    }
+  
+    &__answer {
+      margin: 0 0 45px 0;
+    }
+  }
+}
+
+
+.answer {
+  &_li {
+    margin: 0 0 48px 0;
+    &:last-child{
+      margin: 0 0 0 0;
+    }
+    &:before{
+      content: counter(cupcake);
+      width: 20px;
+      display: block;
+      font-family: Montserrat;
+      font-size: 30px;
+      line-height: 37px;
+      padding: 0 51px 0 0 ;
+    }
+  }
+
+  &__list {
+    li{
+      display: flex;
+      counter-increment: cupcake;
+    }
+  }
+}
+
+.advantages {
+
+  &__title {
+    font-family: Montserrat;
+    font-size: 34px;
+    line-height: 41px;
+   
+  }
+
+  &__list {
+
+  }
+
+  &__li {
+    display: flex;
+    margin: 56px 0 0 0;
+  }
+
+  &__svg {
+  }
+
+  &__text {
+    padding: 0 0 0 47px;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
