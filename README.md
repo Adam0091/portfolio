@@ -1,6 +1,6 @@
-#Hi.:hand:
+# Hi.:hand:
 
-##You can view the project repositories at these links:
+## You can view the project repositories at these links:
  -  <a href="" md-fab>
         <md-icon class="md-24">Star-wars</md-icon>
     </a>
